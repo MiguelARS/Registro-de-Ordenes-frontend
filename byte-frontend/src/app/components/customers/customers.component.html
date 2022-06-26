@@ -1,0 +1,35 @@
+<div class="main-container">
+    <h2 class="title">Lista de Clientes</h2>
+    <div class="add-button">
+      <button (click)="create()" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Crear Nuevo</button>
+    </div>
+    <div class="row justify-content-center my-5">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Compañía</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Pais</th>
+                <th scope="col">Teléfono</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let customer of customerList">
+                <td>{{customer.customerId}}</td>
+                <td>{{customer.companyName}}</td>
+                <td>{{customer.contactName}}</td>
+                <td>{{customer.country}}</td>
+                <td>{{customer.phone}}</td>
+                <td class="details-buttons">
+                  <button class="btn detail btn-small btn-primary" [routerLink]="['/detalleCliente',customer.customerId]" data-bs-toggle="modal"><i class="fa-solid fa-receipt"></i></button>
+                  <button class="btn delete btn-small btn-danger" (click)="deleteData(customer.customerId)" ><i class="fa-solid fa-delete-left"></i></button>
+              </td>
+              </tr>
+            </tbody>
+          </table>
+
+    </div>
+</div>
+

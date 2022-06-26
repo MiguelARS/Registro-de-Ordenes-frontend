@@ -1,0 +1,19 @@
+.table{
+    width: 80%;
+}
+.row{
+    margin:0;
+}
+
+.title{
+    margin:2vh;
+}
+
+.detail .delete{
+    width:50px;
+}
+
+.add-button{
+    text-align: end;
+    margin-right: 20vh;
+}

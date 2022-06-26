@@ -1,0 +1,18 @@
+.formulario{
+    margin:5vh;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo{
+    margin:2vh;
+}
+.buttons{
+    margin-top: 5vh;
+    padding: 0 35vh;
+}
+
+.btn-save{
+    width:20vh;
+}
